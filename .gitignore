@@ -34,7 +34,7 @@ bower.json
 .powenv
 .sass-cache
 .DS_Store
-config/database.yml
+#config/database.yml
 public/blog/feed.xml
 db/schema.rb
 public/blog/*
