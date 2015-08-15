@@ -1,0 +1,12 @@
+<div class="navform">
+  <%= form_for(:session_client, url: 'https://account.cyberwatch.fr/signin') do |f| %>
+
+  <%= f.label :email, "Email / Login" %>
+  <%= f.text_field :email %>
+
+  <%= f.label :password, "Mot de passe" %>
+  <%= f.password_field :password %>
+
+  <%= f.submit "Se connecter", class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>

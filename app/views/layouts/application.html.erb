@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+    <%= favicon_link_tag '/favicon.ico' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin FB section -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Startup Trampolino" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.startuptrampolino.fr" />
+    <meta property="og:image" content="https://www.stratuptrampolino.fr/images/cover.jpg" />
+    <!-- Begin Mobile Section -->
+    <meta name="apple-mobile-web-app-title" content="Startup Trampolino">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="/assets/respond.min.js"></script>
+    <script src="/assets/css3-mediaqueries.js"></script>
+    <!--[if lt IE 9]>
+      <script src="/assets/html5shiv.min.js"></script>
+      <script src="/assets/respond.min.js"></script>
+    <![endif]-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" href="/img/apple-stratuptrampolino-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-stratuptrampolino-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-stratuptrampolino-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-stratuptrampolino-icon-ipad-retina.png">
+    <!-- End Mobile Section -->
+    <!-- Tidio integration -->
+
+  </head>
+  <body>
+      <%= render 'layouts/header' %>
+      <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
+      <%= render 'layouts/footer' %>
+      <!-- Google Analytics -->
+
+  </body>
+</html>

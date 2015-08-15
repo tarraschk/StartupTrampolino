@@ -1,0 +1,9 @@
+# French translations for Ruby on Rails
+# https://github.com/svenfuchs/rails-i18n/tree/master/rails/locale
+
+fr:
+  hello: "Bonjour le monde"
+  time:
+    formats:
+      date: "%d/%m/%y %Hh%M"
+      dateday: "%d/%m/%y"

@@ -1,0 +1,58 @@
+<header class="header" role="navigation">
+  <nav id="navbar-principal" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to "<span>Startup Trampolino</span>".html_safe, root_path, id: "logo", class:"navbar-brand" %>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/#edito">
+              <p>
+                <span>
+                  <%= "edito".upcase %>
+                </span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="/#propositions">
+              <p>
+                <span>
+                  <%= "propositions".upcase %>
+                </span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="/#equipe">
+              <p>
+                <span>
+                  <%= "equipe".upcase %>
+                </span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="/#contact">
+              <p>
+                <span>
+                  <%= "contact".upcase %>
+                </span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>

@@ -1,0 +1,217 @@
+<% provide(:title, "Co-construire la startup-nation de nos rêves.") %>
+
+<div class="container-fluid">
+  <div id="edito" class="row section">
+    <div class="container">
+      <div class="alert-block">
+        <% flash.each do |key, value| %>
+          <% if value.kind_of?(Array) %>
+            <% value.each do |v| %>
+              <%= content_tag(:div, v, class: "alert alert-#{key}") %>
+            <% end %>
+          <% else %>
+            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="col-md-6">
+        <img src="/images/icones/startup_trampolino.png" alt="" class="img-responsive" />
+      </div>
+      <div class="col-md-6">
+        <h1>Edito</h1>
+        <p class="couleur-2 text-justify">
+          La situation économique de notre pays nous engage aujourd’hui à agir rapidement afin que les startups françaises bénéficient d’un écosystème dynamique à même d’assurer leur compétitivité.
+          <br/>
+          <br/>
+          Certes, ces jeunes entreprises ont pu bénéficier ces dernières années de mesures visant à encourager leur croissance. Pour autant, au-delà d’un énième cadre législatif ou réglementaire c’est bien aujourd’hui d’une mobilisation générale de l’écosystème entrepreneuriale dont il est question.
+          <br/>
+          <br/>
+          Un collectif de 6 entrepreneurs s’est réuni pour rédiger 6 propositions, issues de leurs expériences. Parce que nous sommes conscients de nos droits et de nos devoirs, nous sommes prêts à prendre nos responsabilités dans la réalisation des propositions de ce manifeste.
+          <br/>
+          <br/>
+          Nous appelons aujourd’hui celles et ceux qui le souhaitent à venir nous rejoindre, pour co-construire ensemble la startup-nation dont nous rêvons tous.
+        </p>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <h1>News</h1>
+        <p class="couleur-2 text-justify">
+          Septembre 2015 :
+          <br/>
+          <br/>
+          Octobre 2015 :
+          <br/>
+          <br/>
+          Novembre 2015 :
+          <br/>
+          <br/>
+          Décembre 2015 :
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div id="propositions" class="row section">
+    <div class="container">
+      <div class="col-md-6">
+        <h1>Propositions</h1>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-lg-offset-1 col-lg-2 col-md-offset-3 col-md-1 col-sm-offset-1 col-sm-2 center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h2>Politiques publiques</h2>
+            </div>
+          </div>
+          <a href="/propositions/politiques-publiques"><img src="/images/icones/politiques_publiques.png" alt="" title="Politiques publiques" class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-2 col-sm-offset-0 col-sm-3 img-responsive img-icon-manifesto" /></a>
+          <a href="/propositions/financement"><img src="/images/icones/financement.png" alt="" title="Financement" class="col-lg-3 col-md-2 col-sm-3 img-responsive img-icon-manifesto" /></a>
+          <div class="col-lg-offset-0 col-lg-2 col-md-offset-0 col-md-1 col-sm-2 center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h2>Financement</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-1 col-lg-offset-0 col-md-1 col-md-offset-2 col-sm-offset-0 col-sm-1 center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h2>Accès aux marchés</h2>
+            </div>
+          </div>
+          <a href="/propositions/acces-aux-marches"><img src="/images/icones/acces_marches.png" alt="" title="Accès aux marchés" class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-2 col-sm-offset-0 col-sm-3 img-responsive img-icon-manifesto" /></a>
+          <div id="propositions-content" class="col-lg-offset-0 col-lg-4 col-md-offset-0 col-md-2 col-sm-offset-0 col-sm-4 hidden-xs text-center center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h3>Startup Trampolino</h3>
+              <h5>6 piliers, 6 propositions</h5>
+              <br/>
+              <p class="visible-lg">
+                Veuillez sélectionner un thème<br/>en cliquant sur un hexagone.
+              </p>
+            </div>
+            <div class="content hidden">
+            </div>
+          </div>
+          <a href="/propositions/culture-entrepreneuriale"><img src="/images/icones/culture_entrepreneuriale.png" alt="" title="Culture entrepreneuriale" class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-2 col-sm-offset-0 col-sm-3 img-responsive img-icon-manifesto" /></a>
+          <div class="col-lg-1 col-md-1 col-sm-1 center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h2>Culture entrepreneuriale</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-offset-1 col-lg-2 col-md-offset-3 col-md-1 col-sm-offset-1 col-sm-2 center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h2>Education et formation</h2>
+            </div>
+          </div>
+          <a href="/propositions/education-et-formation"><img src="/images/icones/education_formation.png" alt="" title="Education et formation" class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-2 col-sm-offset-0 col-sm-3 img-responsive img-icon-manifesto" /></a>
+          <a href="/propositions/accompagnement"><img src="/images/icones/accompagnement.png" alt="" title="Accompagnement" class="col-lg-3 col-md-2 col-sm-3 img-responsive img-icon-manifesto" /></a>
+          <div class="col-lg-offset-0 col-lg-2 col-md-offset-0 col-md-1 col-sm-2 center-wrapper">
+            <div class="center-wrapper-vertical">
+              <h2>Accompagnement</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div id="equipe" class="row section">
+    <div class="container">
+      <div class="col-md-6">
+        <h1>Equipe</h1>
+      </div>
+      <div class="col-md-12 equipe-content">
+        <div class="col-lg-2 people text-center">
+          <img src="/images/avatars/francoisalexandre_glaudet.png" class="img-circle img-responsive avatar" />
+          <h2 class="name">François-Alexandre<br/>GLAUDET</h2>
+          <hr/>
+          <p class="title">Pilier<br/>Politiques Publiques</p>
+          <hr/>
+          <p class="job">Co-Fondateur de Daruma</p>
+          <hr/>
+          <img src="" class="img-circle img-responsive logo" />
+        </div>
+        <div class="col-lg-2 people text-center">
+          <img src="/images/avatars/yoann_rouillac.png" class="img-circle img-responsive avatar" />
+          <h2 class="name">Yoann<br/>ROUILLAC</h2>
+          <hr/>
+          <p class="title">Pilier<br/>Financement</p>
+          <hr/>
+          <p class="job">Co-Fondateur d'Habitac</p>
+          <hr/>
+          <img src="" class="img-circle img-responsive logo" />
+        </div>
+        <div class="col-lg-2 people text-center">
+          <img src="/images/avatars/laurence_popoff.png" class="img-circle img-responsive avatar" />
+          <h2 class="name">Laurence<br/>POPOFF</h2>
+          <hr/>
+          <p class="title">Pilier<br/>Culture</p>
+          <hr/>
+          <p class="job">Fondatrice de<br/>C'nola</p>
+          <hr/>
+          <img src="" class="img-circle img-responsive logo" />
+        </div>
+        <div class="col-lg-2 people text-center">
+          <img src="/images/avatars/maxime_alayeddine.png" class="img-circle img-responsive avatar" />
+          <h2 class="name">Maxime<br/>ALAY-EDDINE</h2>
+          <hr/>
+          <p class="title">Pilier<br/>Accompagnement</p>
+          <hr/>
+          <p class="job">Co-Fondateur de Cyberwatch</p>
+          <hr/>
+          <img src="" class="img-circle img-responsive logo" />
+        </div>
+        <div class="col-lg-2 people text-center">
+          <img src="/images/avatars/didier_baptiste.png" class="img-circle img-responsive avatar" />
+          <h2 class="name">Didier<br/>BAPTISTE</h2>
+          <hr/>
+          <p class="title">Pilier<br/>Education</p>
+          <hr/>
+          <p class="job">Co-Fondateur de YouCanHaveIt</p>
+          <hr/>
+          <img src="" class="img-circle img-responsive logo" />
+        </div>
+        <div class="col-lg-2 people text-center">
+          <img src="/images/avatars/jeremy_lamri.jpg" class="img-circle img-responsive avatar" />
+          <h2 class="name">Jérémy<br/>LAMRI</h2>
+          <hr/>
+          <p class="title">Pilier<br/>Accès aux Marchés</p>
+          <hr/>
+          <p class="job">Co-Fondateur de MonkeyTie</p>
+          <hr/>
+          <img src="" class="img-circle img-responsive logo" />
+        </div>
+      </div>
+    </div>
+    <h5 style="text-align:center; background-color:yellow;" class="container">TODO : INSERER LOGOS</h5>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div id="contact" class="row section">
+    <div class="container">
+      <div class="col-md-6">
+        <h1>Contact</h1>
+      </div>
+      <div class="col-md-6 col-md-offset-3 contact-content">
+        <p class="text-justify">
+          Nous appelons aujourd’hui tous ceux qui le souhaitent à venir nous rejoindre pour qu’ensemble nous puissions co-construire la startup-nation dont nous rêvons tous.
+          <br/>
+          Journalistes, entrepreneurs, curieux et acteurs du changement, n'hésitez pas à nous envoyer un mail à l'adresse suivante :
+        </p>
+        <div class="email">
+          <a href="mailto:bienvenue@startuptrampolino.fr">bienvenue@startuptrampolino.fr</a>
+        </div>
+        <br/>
+        <br/>
+        <p class="text-justify">
+          Vous pouvez également vous inscrire à notre newsletter pour recevoir les invitations à nos prochains évènements :
+        </p>
+        <h5 style="text-align:center; background-color:yellow;">TODO : INSERER FORMULAIRE MAILCHIMP</h5>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<% provide(:title, "Proposition - "+@proposition[:title]) %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <a class="proposition-lien <%= if current_page?(controller: "propositions", uri: "politiques-publiques", action: "show") then "active" end %>" href="/propositions/politiques-publiques">Politiques publiques</a>
+      <a class="proposition-lien <%= if current_page?(controller: "propositions", uri: "financement", action: "show") then "active" end %>" href="/propositions/financement">Financement</a>
+      <a class="proposition-lien <%= if current_page?(controller: "propositions", uri: "acces-aux-marches", action: "show") then "active" end %>" href="/propositions/acces-aux-marches">Accès aux marchés</a>
+      <a class="proposition-lien <%= if current_page?(controller: "propositions", uri: "culture-entrepreneuriale", action: "show") then "active" end %>" href="/propositions/culture-entrepreneuriale">Culture entrepreneuriale</a>
+      <a class="proposition-lien <%= if current_page?(controller: "propositions", uri: "education-et-formation", action: "show") then "active" end %>" href="/propositions/education-et-formation">Education et formation</a>
+      <a class="proposition-lien <%= if current_page?(controller: "propositions", uri: "accompagnement", action: "show") then "active" end %>" href="/propositions/accompagnement">Accompagnement</a>
+    </div>
+  </div>
+</div>
+<div class="container proposition">
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      <h1><%= @proposition[:title].upcase %></h1>
+    </div>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <img src="<%= '/images/icones/' + @proposition[:index].gsub('-', '_')+'.png' %>" class="img-responsive" alt="<%= @proposition[:title] %>" />
+        </div>
+        <div class="col-lg-6 text-justify">
+          <h2 class="text-center"><%= @proposition[:resume].upcase %></h2>
+          <hr/>
+          <br/>
+          <h3>Constat - </h3>
+          <p>
+            <%= @proposition[:constat] %>
+          </p>
+          <br/>
+          <h3>Solution - </h3>
+          <p>
+            <%= @proposition[:solution] %>
+          </p>
+          <br/>
+          <h3>Impact - </h3>
+          <p>
+            <%= @proposition[:impact] %>
+          </p>
+          <br/>
+          <h3>Acteurs - </h3>
+          <p>
+            <%= @proposition[:acteurs] %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
