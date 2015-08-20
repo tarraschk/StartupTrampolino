@@ -314,6 +314,16 @@ input {
   }
 }
 
+@media (max-width: 767px) {
+
+  #propositions {
+    img {
+      margin-top: 20px;
+    }
+  }
+
+}
+
 .text-justified {
   text-align: justify;
 }
