@@ -357,6 +357,10 @@ input {
     border: solid 1px rgba(0,0,0, 0.6);
     width: 5%;
   }
+  img.logo {
+    max-width: 60%;
+    max-height: 75px;
+  }
 }
 
 #contact {
